@@ -46,7 +46,7 @@ def no_division(A):
     left = 1
     for i in range(len(A)):
         right =1
-        if i>0:
+        if i>0: 
             left *= A[i-1]
         for j in range(i+1,len(A)):
             right *= A[j]
