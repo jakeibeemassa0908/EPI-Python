@@ -35,11 +35,12 @@ def change(line):
         return "ERROR"
     else:
         give_back = cash - purchase_price
-        while give_back > 0 :
+        while give_back > 1.0 :
             for num in change:
                 if num <= give_back:
                     return_val.append(num)
                     give_back -= num
+                    break
         
         for num in return_val:
             match_str.append(match[num])
